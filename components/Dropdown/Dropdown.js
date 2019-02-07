@@ -17,9 +17,9 @@ class Dropdown {
   }
 
   toggleContent() {
-    
     // Toggle the ".dropdown-hidden" class off and on
-    this.content.classList.toggle('.dropdown-hidden');
+    this.content.classList.toggle('dropdown-hidden');
+
 
     // if (buttonImg.getAttribute('src') == './assets/down-arrow.svg') {
     //   TweenMax.to(this.domElement, 1, {className: '+=article-open'});
