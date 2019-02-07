@@ -22,9 +22,9 @@ class Dropdown {
 
 
     if ( this.content.classList.contains('dropdown-hidden')) {
-      TweenMax.to(this.domElement, 1, {className: '+=dropdown-hidden'});
+      TweenMax.to(this.content, .1, {className: '-=dropdown-hidden'});
     } else {
-      TweenMax.to(this.domElement, 1, {className: '-=dropdown-hidden'});
+      TweenMax.to(this.content, .1, {className: '+=dropdown-hidden'});
     }
   }
 }
