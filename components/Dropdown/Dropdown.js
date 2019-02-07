@@ -18,14 +18,14 @@ class Dropdown {
 
   toggleContent() {
     // Toggle the ".dropdown-hidden" class off and on
-    this.content.classList.toggle('dropdown-hidden');
+    //this.content.classList.toggle('dropdown-hidden');
 
 
-    // if (buttonImg.getAttribute('src') == './assets/down-arrow.svg') {
-    //   TweenMax.to(this.domElement, 1, {className: '+=article-open'});
-    // } else {
-    //   TweenMax.to(this.domElement, 1, {className: '-=article-open'});
-    // }
+    if ( this.content.classList.contains('dropdown-hidden')) {
+      TweenMax.to(this.domElement, 1, {className: '+=dropdown-hidden'});
+    } else {
+      TweenMax.to(this.domElement, 1, {className: '-=dropdown-hidden'});
+    }
   }
 }
 
